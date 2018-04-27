@@ -11,7 +11,7 @@ app.get('/', (req, res) => res.render('pages/index'));
 app.get('/mongodb', function (request, response) {
   mongodb.MongoClient.connect(process.env.MONGODB_URI, function(err, client) {
     if(err) throw err;
-    var db = client.db('heroku_dmx58ww8');
+    var db = client.db('heroku_fbn41qh9');
     //get collection of routes
     var Routes = db.collection('Routes');
     //get all Routes with frequency >=1
